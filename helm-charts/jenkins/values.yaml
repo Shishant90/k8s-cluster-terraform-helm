@@ -1,0 +1,39 @@
+# Jenkins Helm deployment configuration
+controller:
+  image: "jenkins/jenkins"
+  tag: "lts"
+  adminUser: "admin"
+  adminPassword: "admin123"
+  
+  resources:
+    requests:
+      cpu: "50m"
+      memory: "256Mi"
+    limits:
+      cpu: "2000m"
+      memory: "4096Mi"
+  
+  serviceType: LoadBalancer
+  
+  installPlugins:
+    - kubernetes:latest
+    - workflow-job:latest
+    - workflow-aggregator:latest
+    - credentials-binding:latest
+    - git:latest
+    - github:latest
+    - docker-workflow:latest
+
+persistence:
+  enabled: true
+  size: "8Gi"
+
+agent:
+  enabled: true
+  resources:
+    requests:
+      cpu: "512m"
+      memory: "512Mi"
+    limits:
+      cpu: "512m"
+      memory: "512Mi"
