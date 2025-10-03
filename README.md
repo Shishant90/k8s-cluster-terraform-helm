@@ -299,12 +299,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Prometheus Community](https://prometheus-community.github.io/helm-charts/)
 - [Jenkins Helm Chart](https://github.com/jenkinsci/helm-charts)
 
-## 📞 Support
-
-- 📧 **Email**: [your-email@example.com](mailto:your-email@example.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/Shishant90/k8s-cluster-terraform-helm/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/Shishant90/k8s-cluster-terraform-helm/discussions)
-
----
 
 ⭐ **Star this repository if it helped you!** ⭐
